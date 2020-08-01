@@ -18,9 +18,9 @@ RUN pip install --upgrade --no-cache-dir pip \
       opencv-python==3.4.1.15 \
       yacs
 
-WORKDIR /opt
 
 # Copy detectron code and build
+WORKDIR /opt
 WORKDIR /workspace/object_detection
 RUN mkdir -p /datasets/data
 RUN mkdir /results
